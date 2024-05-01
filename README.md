@@ -1,7 +1,9 @@
 **TODO TASKS API**
+
 This is a RESTful API built with Express.js for managing todo tasks. It provides endpoints for user authentication, task management (CRUD operations), and task assignment.
 
 **Prerequisites**
+
 Node.js installed on your machine
 SQLite database driver for Node.js
 
