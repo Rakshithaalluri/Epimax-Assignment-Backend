@@ -18,9 +18,13 @@ Run the server using npm start.
 **Usage**
 
 Sign Up
+
 URL: /signup
+
 Method: POST
+
 Request Body:
+
 {
   "username": "your_username",
   "password_hash": "your_password"
@@ -30,12 +34,16 @@ Request Body:
 **Login**
 
 URL: /login
+
 Method: POST
+
 Request Body:
+
 {
   "username": "your_username",
   "password_hash": "your_password"
 }
+
 **Response**:
 
 {
@@ -46,40 +54,55 @@ Request Body:
 **Create Task**
 
 URL: /tasks
+
 Method: POST
+
 Request Body:
+
 {
   "title": "Task Title",
   "description": "Task Description",
   "status": "Task Status",
   "assignee_id": assignee_id
 }
+
 Note: Ensure you include the JWT token in the Authorization header as a Bearer token.
 
 
 **Get All Tasks**
 
 URL: /tasks
+
 Method: GET
+
 Request Header:
+
 Authorization: Bearer your_jwt_token
 
 
 **Get Task by ID**
 
 URL: /tasks/:id
+
 Method: GET
+
 Request Header:
+
 Authorization: Bearer your_jwt_token
 
 
 **Update Task**
 
 URL: /tasks/:id
+
 Method: PUT
+
 Request Header:
+
 Authorization: Bearer your_jwt_token
+
 Request Body:
+
 {
   "title": "Updated Task Title",
   "description": "Updated Task Description",
@@ -91,8 +114,11 @@ Request Body:
 **Delete Task**
 
 URL: /tasks/:id
+
 Method: DELETE
+
 Request Header:
+
 Authorization: Bearer your_jwt_token
 
 
